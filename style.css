@@ -4,12 +4,17 @@
 
 .contain{
   max-width: 80%;
+  /* height: auto; */
   padding: 50px;
   border: 2px solid grey;
   margin: auto;
   border-radius: 25px;
   box-sizing: content-box;
   padding-bottom: 100px;
+}
+
+.height-fit {
+  max-height: 70%;
 }
 
 body {
