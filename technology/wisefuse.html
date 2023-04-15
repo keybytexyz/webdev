@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>KeyByte Technology</title>
+    <link rel="icon" href="logo-square.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214886339-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-214886339-1');
+    </script>
+
+    <style>
+        /* #content {
+                position: relative;
+            }
+            #content img {
+                position: absolute;
+                top: -170px;
+                right: 0px;
+            } */
+        
+        .minicontain {
+            max-width: 20%;
+            max-height: 30px;
+            max-height: 400px;
+            padding: 0px;
+            border: 2px solid grey;
+            margin: auto;
+            border-radius: 11px;
+            /* border-radius:5px; */
+            box-sizing: content-box;
+            background-color: #F1E5AC;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-placeholder">
+        <script>
+            $("#nav-placeholder").load("nav.html");
+        </script>
+    </div>
+
+
+    <h3 class=header>WiseFuse</h3>
+
+    <!-- WISEFUSE -->
+
+    <div id="section">
+        <div class="contain">
+            <h3>
+                <center>WISEFUSE</center>
+            </h3>
+
+            <div class="minicontain">
+                <a href="https://twitter.com/SomaliChaterji/status/1534171298015870976?s=20&t=kI9knwdZkwz1rpbGjBCtNQ" style="color:black;">
+                    <center>Best Paper Award Winner</center>
+                </a>
+            </div>
+
+            <br></br>
+
+            <div class="row align-items-center" style="max-width: 50%; float:right; max-height:20%; background:white; margin:0px">
+                <div class="col">
+                    <br></br>
+                    <br>
+                    <a href="https://schaterji.io/publications/2022/wisefuse/">
+                        <img style="width: 110%;" alt="wisefuse" src="images/technology/wisefuse.png"></a>
+                </div>
+            </div>
+
+            <div class="row align-items-center" style="max-width: 50%; float:left; max-height:20%; background:white; margin:0px">
+                <center>
+                    <div class="col">
+                        <h5>This is our automated approach to generating optimized execution plans for serverless DAGs, with regards to latency objective or budget.</h5>
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3530892"><button type="button" class="btn me-md-2 btn-outline-primary">Sigmetrics Research Paper</button></a>
+                        <br><br>
+                        <h6> Appeared in Sigmetrics Conference, 2022</h6>
+                        <br></br>
+                </center>
+                <h6> </h6>
+                <h4>
+                    <center>WISEFUSE has the following three key optimizations:</center>
+                </h4>
+                <h5>
+                    <ol>
+                        <li>It combines in-series functions together within one VM to reduce overhead communication between cascaded functions.</li>
+                        <li>It executes a group of parallel invocations of a function within a VM, improving resource sharing.</li>
+                        <li>It improves resource allocation, assigning the correct VM size to each function/function bundle to reduce E2E latency and cost.</li>
+                    </ol>
+                    <center>
+                        <a href="https://schaterji.io/publications/2022/wisefuse/"><button type="button" class="btn btn-outline-primary">Learn More</button></a> </center>
+                </h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
