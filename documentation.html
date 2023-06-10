@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>KeyByte</title>
+    <link rel="icon" href="logo-square.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214886339-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-214886339-1');
+    </script>
+
+    <style>
+        #howitworks {}
+        
+        #definitions {}
+        
+        #uploadformat {}
+    </style>
+
+</head>
+
+<body>
+    <div id="nav-placeholder">
+        <script>
+            $("#nav-placeholder").load("nav.html");
+        </script>
+    </div>
+
+    <div class="container">
+        <h3>OptimusCloud Documentation</h3>
+        <br>
+        <h4>Getting Started</h4>
+        <ol>
+            <li>How does it work?</li>
+            <li>Descriptions and Definitions</li>
+            <li>Upload Trace Configuration Format</li>
+        </ol>
+
+        <br>
+        <br>
+
+        <div id="howitworks">
+            <h4>How Does OptimusCloud Work?</h4>
+            <h5>Step 1: Configuration Stage </h5>
+            <p>At the configuration stage, the user chooses workload and database-specific settings. From this stage, the user can send the selected configuration to the <i>OptimusCloud</i> Server at any time. There can only be <b>one</b> workload set up
+                in the configuration stage at a time. As soon as the “Run Workload” button is selected, the workload leaves the configuration stage and the <i>OptimusCloud</i> Server receives the workload.
+            </p>
+            <br>
+            <h5>Step 2: Init Stage</h5>
+            <p>During the init stage, the workload is taken in by the <i>OptimusCloud</i> server and begins to be processed. Here, the server initializes and configures all of the VMs. This state is finished once the VMs have been initialized or if the workload
+                gets canceled.
+            </p>
+            <br>
+            <h5>Stage 3: Run Stage</h5>
+            <p>In this stage, the workloads are running with their connection to the <i>OptimusCloud</i> server. This stage ends when the user selects the “Stop Workload” button. </p>
+            <br>
+            <h5>Stage 4: Closing Stage</h5>
+            <p>In the closing stage, the VMs close for the specified workload and additional cleanup is performed. Results are displayed.</p>
+
+        </div>
+        <br>
+        <br>
+        <div id="definitions">
+            <h4>Definitions and Descriptions</h4>
+            <h5>Workload Configuration</h5>
+            <p><i>General</i></p>
+            <ul>
+                <li><b>Workload Distribution</b>: The mix of the four different types (Read, Write, Scan, and Update) of database requests in the chosen workload.
+                    <ul>
+                        <li><b>Read</b>: A database read request.</li>
+                        <li><b>Write</b>: A database write request.</li>
+                        <li><b>Update</b>: A request to update a record in the database.</li>
+                        <li><b>Scan</b>: A request to scan through all of the entries in a database table.</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <p>Volume Configurations</p>
+            <ul>
+                <li><b>Number of nodes</b>: The number of cloud virtual machine instances to run the specified database on.</li>
+                <li><b>Frequency of change</b>: This is the frequency at which the workload will change.</li>
+                <li><b>Workload length</b>: This is the amount of time that a workload will be run.</li>
+            </ul>
+
+        </div>
+        <br>
+        <br>
+        <div id="uploadformat">
+            <p>The “upload trace configuration” must be a JSON file, in the same way that the “download current trace” is a JSON file. The format must be the following:</p>
+            <p><i>{“state”: state_value, “distribution”: [{“start”: start_value, “end”: end_value, “distribution”: {“SCAN”: value, “UPDATE”: value, “WRITE”: value, “READ”: value}}, {“start”: start_value, “end”: end_value, “distribution”: {“SCAN”: value, “UPDATE”: value, “WRITE”: value, “READ”: value}},], “node_count”: 6}</i></p>
+            <p>Essentially, the file must specify a state value, which will generally be 0. Then they must specify the workload distribution, which will have the scan/update/write/read values, separate for each start and end time.</p>
+
+        </div>
+
+
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrm1Em61hC86qI0r?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </div>
+</body>
+
+</html>
