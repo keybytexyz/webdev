@@ -1,96 +1,135 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>KeyByte</title>
-        <link rel="icon" href="logo-square.png">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214886339-1"></script>
+
+<head>
+    <title>KeyByte</title>
+    <link rel="icon" href="logo-square.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214886339-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-214886339-1');
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder">
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-214886339-1');
+            $("#nav-placeholder").load("nav.html");
         </script>
-    </head>
+    </div>
 
-    <body>
-        <div id="nav-placeholder">
-            <script>
-                $("#nav-placeholder").load("nav.html");
-            </script>
-        </div>
-        
-        <div class="container">
-            <h3>KeyByte in the News</h3>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <img style="width: 75%;" alt="" src="images/news/may-2022-trask-award.jpg">
-                </div>
-                <div class="col">
-                    <h4>May 2022</h4>
-                    <p>KeyByte receives Trask award for further commercialization</p>
-                    <a class="btn btn-outline-primary" href="may2022-trask.html">Article</a>
-                </div>
+    <div class="container">
+        <h3>KeyByte in the News</h3>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 75%;" alt="" src="images/news/march2023-interns.png">
             </div>
-            <br>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <img style="width: 75%;" alt="" src="images/news/january2022-nsf-career.jpg">
-                </div>
-                <div class="col">
-                    <h4>January 2022</h4>
-                    <p>KeyByte CEO receives an NSF-CAREER award from the Computer and Information Sciences directorate at the National Science Foundation (NSF).</p>
-                    <a class="btn btn-outline-primary" href="https://engineering.purdue.edu/Engr/AboutUs/News/Spotlights/2022/2022-0111-abe-chaterji">Article</a>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <img style="width: 75%;" alt="" src="images/news/july2021-trask.png">
-                </div>
-                <div class="col">
-                    <h4>July 2021</h4>
-                    <p>We win the TRASK Innovation Award from Purdue's Office of Technology Commercialization. This award will enable us to hire a frontend software engineer and a backend software engineer.</p>
-                    <a class="btn btn-outline-primary" href="https://www.purdue.edu/newsroom/releases/2021/Q3/reimagining-hydrogen,-imaging,-databases-and-oil.html">Article</a>
-                    &nbsp;&nbsp;
-                    <a class="btn btn-outline-primary" href="https://engineering.purdue.edu/Engr/AboutUs/News/Spotlights/2021/2021-summer-trask-innovation-awardees?utm_source=purdue-news&utm_medium=social&utm_campaign=coe-news">Read More</a>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <img style="width: 60%;" alt="" src="images/news/june2021-cra-blog.jpeg">
-                </div>
-                <div class="col">
-                    <h4>June 2021</h4>
-                    <p>KeyByte CEO profiled in CRA's Great Innovative Idea blog.</p>
-                    <a class="btn btn-outline-primary" href="https://cccblog.org/2021/06/15/great-innovative-idea-computing-for-computational-biology-and-digital-ai/">Article</a>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <img style="width: 75%;" alt="" src="images/news/may2021-sonic.png">
-                </div>
-                <div class="col">
-                    <h4>May 2021</h4>
-                    <p>Our latest innovation, how to optimize serverless computing for complex DAG-based applications, has been accepted to appear at the Usenix Annual Technical Conference 2021, to be held July 14-16.</p>
-                    <a class="btn btn-outline-primary" href="https://www.usenix.org/conference/atc21/presentation/mahgoub">Article</a>
-                </div>
+            <div class="col">
+                <h4>March 2023</h4>
+                <p>KeyByte wins “Interns for Indiana” award, which will fund 3 interns for the summer. The interns will work respectively on front end development, back end development, and market opportunity development.</p>
+                <a class="btn btn-outline-primary" href="https://www.opp.purdue.edu/our-programs/Interns-For-Indiana">Article</a>
             </div>
         </div>
-    </body>
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 75%;" alt="" src="images/news/august2022-purdueresearch.png">
+            </div>
+            <div class="col">
+                <h4>August 2022</h4>
+                <p>KeyByte featured in a news story from the Purdue Research Foundation (PRF).</p>
+                <a class="btn btn-outline-primary" href="https://www.purdue.edu/newsroom/releases/2022/Q3/eight-purdue-researchers-receive-470,000-to-strengthen-the-marketplace-appeal-of-their-work.html">Article</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 75%;" alt="" src="images/news/june2022-sigmetricspaper.jpg">
+            </div>
+            <div class="col">
+                <h4>June 2022</h4>
+                <p>KeyByte's serverless technology wins best paper award at prestigious ACM conference, SIGMETRICS.</p>
+                <a class="btn btn-outline-primary" href="http://www.sigmetrics.org/sigmetrics2022/">Article</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 75%;" alt="" src="images/news/may-2022-trask-award.jpg">
+            </div>
+            <div class="col">
+                <h4>May 2022</h4>
+                <p>KeyByte receives Trask award for further commercialization</p>
+                <a class="btn btn-outline-primary" href="may2022-trask.html">Article</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 75%;" alt="" src="images/news/january2022-nsf-career.jpg">
+            </div>
+            <div class="col">
+                <h4>January 2022</h4>
+                <p>KeyByte CEO receives an NSF-CAREER award from the Computer and Information Sciences directorate at the National Science Foundation (NSF).</p>
+                <a class="btn btn-outline-primary" href="https://engineering.purdue.edu/Engr/AboutUs/News/Spotlights/2022/2022-0111-abe-chaterji">Article</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 75%;" alt="" src="images/news/july2021-trask.png">
+            </div>
+            <div class="col">
+                <h4>July 2021</h4>
+                <p>We win the TRASK Innovation Award from Purdue's Office of Technology Commercialization. This award will enable us to hire a frontend software engineer and a backend software engineer.</p>
+                <a class="btn btn-outline-primary" href="https://www.purdue.edu/newsroom/releases/2021/Q3/reimagining-hydrogen,-imaging,-databases-and-oil.html">Article</a> &nbsp;&nbsp;
+                <a class="btn btn-outline-primary" href="https://engineering.purdue.edu/Engr/AboutUs/News/Spotlights/2021/2021-summer-trask-innovation-awardees?utm_source=purdue-news&utm_medium=social&utm_campaign=coe-news">Read More</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 60%;" alt="" src="images/news/june2021-cra-blog.jpeg">
+            </div>
+            <div class="col">
+                <h4>June 2021</h4>
+                <p>KeyByte CEO profiled in CRA's Great Innovative Idea blog.</p>
+                <a class="btn btn-outline-primary" href="https://cccblog.org/2021/06/15/great-innovative-idea-computing-for-computational-biology-and-digital-ai/">Article</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img style="width: 75%;" alt="" src="images/news/may2021-sonic.png">
+            </div>
+            <div class="col">
+                <h4>May 2021</h4>
+                <p>Our latest innovation, how to optimize serverless computing for complex DAG-based applications, has been accepted to appear at the Usenix Annual Technical Conference 2021, to be held July 14-16.</p>
+                <a class="btn btn-outline-primary" href="https://www.usenix.org/conference/atc21/presentation/mahgoub">Article</a>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
