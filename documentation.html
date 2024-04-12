@@ -46,13 +46,13 @@
         <h4>Getting Started</h4>
         <ol>
             <li>
-                <a class="scrollable" href=#howitworks></a>How does it work?</a>
+                <a class="scrollable" href=#howitworks>How does it work?</a>
             </li>
             <li>
-                <a class="scrollable" href=#definitions></a>Descriptions and Definitions</a>
+                <a class="scrollable" href=#definitions>Descriptions and Definitions</a>
             </li>
             <li>
-                <a class="scrollable" href=#uploadformat></a>Upload Trace Configuration Format</a>
+                <a class="scrollable" href=#uploadformat>Upload Trace Configuration Format</a>
             </li>
         </ol>
 
@@ -106,6 +106,7 @@
         <br>
         <br>
         <div id="uploadformat">
+            <h4>Upload Trace Configuration Format</h4>
             <p>The “upload trace configuration” must be a JSON file, in the same way that the “download current trace” is a JSON file. The format must be the following:</p>
             <p><i>{“state”: state_value, “distribution”: [{“start”: start_value, “end”: end_value, “distribution”: {“SCAN”: value, “UPDATE”: value, “WRITE”: value, “READ”: value}}, {“start”: start_value, “end”: end_value, “distribution”: {“SCAN”: value, “UPDATE”: value, “WRITE”: value, “READ”: value}},], “node_count”: 6}</i></p>
             <p>Essentially, the file must specify a state value, which will generally be 0. Then they must specify the workload distribution, which will have the scan/update/write/read values, separate for each start and end time.</p>
