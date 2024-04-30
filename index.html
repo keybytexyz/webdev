@@ -1,145 +1,151 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>KeyByte</title>
-        <link rel="icon" href="logo-square.png">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214886339-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'UA-214886339-1');
-        </script>
+<head>
+    <title>KeyByte</title>
+    <link rel="icon" href="logo-square.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Comfortaa" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214886339-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-        <script>
-            // When the user clicks on div, open the popup
-            function popupFunction() {
-              var popup = document.getElementById("myPopup");
-              popup.classList.toggle("show");
-            }
-        </script>
-        <style>
-            .hide {
-                display: none;
-            }
-            .show {
-                display: block;
-                position: fixed;
-                bottom: 30px;
-                right: 130px;
-            }
-        </style>
-    
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-214886339-1');
+    </script>
+
+    <script>
+        // When the user clicks on div, open the popup
+        function popupFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+    <style>
+        .hide {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+            position: fixed;
+            bottom: 30px;
+            right: 130px;
+        }
+    </style>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214886339-1">
     </script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-214886339-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-214886339-1');
     </script>
-    </head>
+</head>
 
-    <body>
-        <div id="nav-placeholder">
-            <script>
-                $("#nav-placeholder").load("nav.html");
-            </script>
-        </div>
+<body>
+    <div id="nav-placeholder">
+        <script>
+            $("#nav-placeholder").load("nav.html");
+        </script>
+    </div>
 
-        <div class="container">
-            
-            <div class="card hide" id="myPopup" style="width: 14rem;">
-                <div class="card-header">
-                  Welcome to KeyByte!
-                </div>
-                <div class="card-body">
-                    <a href="demo.html" class="btn btn-outline-primary">Interested to try out our product?</a>
-                    <br><br>
-                    <a href="learn.html" class="btn btn-outline-primary">Learn more of our technology?</a>
-                    <br><br>
-                    <a href="https://airtable.com/shrur0thjObPCJeol" class="btn btn-outline-primary">Existing customer and need support?</a>
-                </div>
+    <div class="container">
+
+        <div class="card hide" id="myPopup" style="width: 14rem;">
+            <div class="card-header">
+                Welcome to KeyByte!
             </div>
-
-            <div onclick="popupFunction()">
-                <a type="button"><img class="pop-up" alt="" src="key-animation.gif"></a>
-            </div>
-
-
-            <br>
-            <div class="row align-items-center">
-                <div class="col">
-                    <h1 style="color: #358BC6;">
-                        KeyByte: Unlock the Potential of your Cloud Databases
-                    </h1>
-                    <br>
-                    <p>
-                        At <i>KeyByte</i>, we engineer technologies to rightsize your NoSQL database to your workload characteristics. 
-                        Our technology can be licensed to your company or we have an integrated software package to rightsize your 
-                        cloud DB or your on-prem DB.
-                    </p>
-                    <a href="demo.html#signup"><button id="bttn" style="background-color: #358BC6; border-color: #358BC6; margin-right: 50px;" type="button" class="btn btn-primary">Sign up to learn more!</button></a>
-                    <img style="width: 20%;" alt="" src="images/KeyByte-demo-qr-code.jpg">
-                </div>
-                <div class="col-2">
-
-                </div>
-                <div class="col">
-                    <img style="width: 75%;" alt="" src="images/laptop-open.jpg">
-                </div>
+            <div class="card-body">
+                <a href="demo.html" class="btn btn-outline-primary">Interested to try out our product?</a>
+                <br><br>
+                <a href="learn.html" class="btn btn-outline-primary">Learn more of our technology?</a>
+                <br><br>
+                <a href="https://airtable.com/shrur0thjObPCJeol" class="btn btn-outline-primary">Existing customer and need support?</a>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col text-center">
-                    <img style="width: 35%;" alt="money" src="images/icons/money.png">
-                    <br><br>
-                    <p>
-                        Reduce cloud $ costs
-                    </p>
-                </div>
-                <div class="col text-center">
-                    <img style="width: 45%;" alt="increase" src="images/icons/increase.png">
-                    <br><br>
-                    <p>
-                        Increase database performance
-                    </p>
-                </div>
-                <div class="col text-center">
-                    <img style="width: 50%;" alt="time" src="images/icons/time.png">
-                    <br><br>
-                    <p>
-                        Ensure latency or throughput SLO
-                    </p>
-                </div>
-                <div class="col text-center">
-                    <img style="width: 50%;" alt="fault" src="images/icons/fault.png">
-                    <br><br>
-                    <p>
-                        Fault tolerance with graceful degradation
-                    </p>
-                </div>
-                <div class="col text-center">
-                    <img style="width: 50%;" alt="lightbulb" src="images/icons/cloud.png">
-                    <br><br>
-                    <p>
-                        Works with Amazon Web Services (AWS)
-                    </p>
-                </div>
+        <div onclick="popupFunction()">
+            <a type="button"><img class="pop-up" alt="" src="key-animation.gif"></a>
+        </div>
+
+
+        <br>
+        <div class="row align-items-center">
+            <div class="col">
+                <h1 style="color: #358BC6;">
+                    KeyByte: Unlock the Potential of your Cloud Databases
+                </h1>
+                <br>
+                <p>
+                    At <i>KeyByte</i>, we engineer technologies to rightsize your NoSQL database to your workload characteristics. Our technology can be licensed to your company or we have an integrated software package to rightsize your cloud DB or your
+                    on-prem DB.
+                </p>
+                <a href="demo.html"><button id="bttn" style="background-color: #358BC6; border-color: #358BC6; margin-right: 50px;" type="button" class="btn btn-primary">Sign up to learn more!</button></a>
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col">
+                <img style="width: 75%;" alt="" src="images/laptop-open.jpg">
             </div>
         </div>
-    </body>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <img style="width: 35%;" alt="money" src="images/icons/money.png">
+                <br><br>
+                <p>
+                    Reduce cloud $ costs
+                </p>
+            </div>
+            <div class="col text-center">
+                <img style="width: 45%;" alt="increase" src="images/icons/increase.png">
+                <br><br>
+                <p>
+                    Increase database performance
+                </p>
+            </div>
+            <div class="col text-center">
+                <img style="width: 50%;" alt="time" src="images/icons/time.png">
+                <br><br>
+                <p>
+                    Ensure latency or throughput SLO
+                </p>
+            </div>
+            <div class="col text-center">
+                <img style="width: 50%;" alt="fault" src="images/icons/fault.png">
+                <br><br>
+                <p>
+                    Fault tolerance with graceful degradation
+                </p>
+            </div>
+            <div class="col text-center">
+                <img style="width: 50%;" alt="lightbulb" src="images/icons/cloud.png">
+                <br><br>
+                <p>
+                    Works with Amazon Web Services (AWS)
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
